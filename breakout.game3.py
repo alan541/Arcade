@@ -82,7 +82,7 @@ def cwall(q,r,s):
     score = sc
     for i in range (10):
             # if wall reaches bat end game
-            if w[i+s] == 1 and r == 450:
+            if w[i+s] == 1 and r >= 450:
                 run = False 
             if w[i+s] == 1:
                 if i%2 == q:
@@ -170,7 +170,7 @@ while run:
         d = -d
  
 
-    if b == 440 and b <= 450 and a >=(x+25) and a <= (x+40):
+    if b >= 440 and b <= 450 and a >=(x+25) and a <= (x+40):
         d = -d
         c = 1
         mdc += 1.5
@@ -188,7 +188,7 @@ while run:
         mdc += 1.5
         pygame.mixer.Sound.play(beep_sound)
 
-    if b == 440 and b <= 450 and a >=(x+10) and a <= (x+25):
+    if b >= 440 and b <= 450 and a >=(x+10) and a <= (x+25):
         d = -d
         c = -1
         mdc += 1.5
