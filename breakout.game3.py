@@ -240,9 +240,9 @@ while run:
 
     # speeding up game at certain score intervals
 
-    if sc == 10:
+    if sc == 1000:
         td = 6
-    if sc == 20:
+    if sc == 2000:
         td = 4
     
     pygame.display.update()  
