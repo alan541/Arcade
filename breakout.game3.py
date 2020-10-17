@@ -149,12 +149,6 @@ while run:
     
     a += c
         
-    if a > 500:
-        c = -c
-
-    if a <= 0:
-        c = -c
-        
     b += d
 
     if b >= 500:
@@ -170,25 +164,29 @@ while run:
         d = -d
  
 
-    if b >= 440 and b <= 450 and a >=(x+25) and a <= (x+40):
+    if b >= 440 and b <= 450 and d ==1 and a >=(x+25) and a <= (x+40):
         d = -d
         c = 1
         mdc += 1.5
         pygame.mixer.Sound.play(beep_sound3)
 
-    if b >= 440 and b <= 450 and a >(x+40) and a <= (x+55):
+    if b >= 440 and b <= 450 and d ==1 and a >(x+40) and a <= (x+55):
         d = -d
         c = 3
         mdc += 1.5
         pygame.mixer.Sound.play(beep_sound)
+    elif a > 500:
+        c = - c
 
-    if b >= 440 and b <=450 and a >=(x-5) and a < (x+10):
+    if b >= 440 and b <=450 and d ==1 and a >=(x-5) and a < (x+10):
         d = -d
         c = -3
         mdc += 1.5
         pygame.mixer.Sound.play(beep_sound)
+    elif a <= 0:
+        c = -c 
 
-    if b >= 440 and b <= 450 and a >=(x+10) and a <= (x+25):
+    if b >= 440 and b <= 450 and d ==1 and a >=(x+10) and a <= (x+25):
         d = -d
         c = -1
         mdc += 1.5
@@ -242,9 +240,9 @@ while run:
 
     # speeding up game at certain score intervals
 
-    if sc == 1000:
+    if sc == 10:
         td = 6
-    if sc == 2000:
+    if sc == 20:
         td = 4
     
     pygame.display.update()  
