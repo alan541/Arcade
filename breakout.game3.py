@@ -63,6 +63,10 @@ sc = 0
 sp = 110
 mdc = 0
 
+# variable for end of game if wall encroaches on base
+
+end = 0
+
 # sound effects
 
 beep_sound = pygame.mixer.Sound("beep.wav")
@@ -78,12 +82,13 @@ def bwall(l,r):
          pygame.draw.rect(win,(0, 0, 255), (l, r, width, height))    
 
 def cwall(q,r,s):
+    e = 0
     dir = d
     score = sc
     for i in range (10):
             # if wall reaches bat end game
             if w[i+s] == 1 and r >= 450:
-                run = False 
+                e = 1  
             if w[i+s] == 1:
                 if i%2 == q:
                     gwall(i*50,r)
@@ -95,7 +100,7 @@ def cwall(q,r,s):
                     score = score + 10
                     dir = -dir
                     break
-    return dir, score
+    return dir, score, e
 
 
 # infinite loop
@@ -212,7 +217,9 @@ while run:
         if mdc >= 5*j and mdc < (5*j) + 5:
             sp = 110 + j*20
             for i in range(j):
-                d, sc = cwall(i%2,sp - 120 - 10*i,10*i + 60)
+                d, sc, end = cwall(i%2,sp - 120 - 10*i,10*i + 60)
+                if end == 1:
+                    run = False
                 # next line not strictly required but helps with graphics 
                 cwall(i%2,sp - 120 - 10*i,10*i + 60)
                 
@@ -221,19 +228,25 @@ while run:
         if mdc >= 5*j and mdc < (5*j) + 5:
             sp = 110 + j*20
             for i in range(j- LC*6):
-                d, sc = cwall(i%2,sp - ((LC+1)*120) - 10*i,10*i + ((LC+1)*60))
+                d, sc, end = cwall(i%2,sp - ((LC+1)*120) - 10*i,10*i + ((LC+1)*60))
+                if end == 1:
+                    run = False
                 # next line not strictly required but helps with graphics 
                 cwall(i%2,sp - ((LC+1)*120) - 10*i,10*i + ((LC+1)*60)) 
 
             for k in range(1, LC+1):
                 for i in range (6):
-                    d, sc = cwall(i%2,sp - (120*k) - 10*i,10*i + (60*k))
+                    d, sc, end = cwall(i%2,sp - (120*k) - 10*i,10*i + (60*k))
+                    if end == 1:
+                        run = False
                     # next line not strictly required but helps with graphics 
                     cwall(i%2,sp - (120*k) - 10*i,10*i + (60*k))
         
      
     for i in range (6):
-        d, sc = cwall(i%2,sp - 10*i,10*i)
+        d, sc, end = cwall(i%2,sp - 10*i,10*i)
+        if end == 1:
+            run = False
         # next line not strictly required but helps with graphics 
         cwall(i%2,sp - 10*i,10*i)
         
