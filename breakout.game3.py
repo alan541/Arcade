@@ -169,13 +169,13 @@ while run:
         d = -d
  
 
-    if b >= 440 and b <= 450 and d ==1 and a >=(x+25) and a <= (x+40):
+    if b <= 455 and b >= 445 and d ==1 and a >=(x+25) and a <= (x+40):
         d = -d
         c = 1
         mdc += 1.5
         pygame.mixer.Sound.play(beep_sound3)
 
-    if b >= 440 and b <= 450 and d ==1 and a >(x+40) and a <= (x+55):
+    if b <= 455 and b >= 445 and d ==1 and a >(x+40) and a <= (x+55):
         d = -d
         c = 3
         mdc += 1.5
@@ -183,7 +183,7 @@ while run:
     elif a > 500:
         c = - c
 
-    if b >= 440 and b <=450 and d ==1 and a >=(x-5) and a < (x+10):
+    if b <= 455 and b >= 445 and d ==1 and a >=(x-5) and a < (x+10):
         d = -d
         c = -3
         mdc += 1.5
@@ -191,7 +191,7 @@ while run:
     elif a <= 0:
         c = -c 
 
-    if b >= 440 and b <= 450 and d ==1 and a >=(x+10) and a <= (x+25):
+    if b <= 455 and b >= 445 and d ==1 and a >=(x+10) and a <= (x+25):
         d = -d
         c = -1
         mdc += 1.5
