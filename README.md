@@ -6,4 +6,4 @@ There are two versions of the old game 'Breakout'. The first, breakout.gamesprit
 
 There is also a version of 'Snake' where you must eat the food pills to grow, but avoid hitting any of the walls or any part of yourself. The snake speeds up at certain score milestones. Use arrow keys to move.
 
-Finally, there is my version of 'Space Invaders', with many features similiar to the original game, such as aliens speeding up as the game goes on, temporary defence walls to shield behind and ufo's with bonus points appearing at the bottom of the screen. Use left and right to move and space bar to fire.
+Finally, there is my version of 'Space Invaders', with many features similiar to the original game, such as aliens speeding up as the game goes on, temporary defence walls to shield behind and ufo's with bonus points appearing at the bottom of the screen. Use left and right to move and space bar to fire. It is written using object orientated programming.
