@@ -8,7 +8,7 @@ There is also a version of 'Snake' where you must eat the food pills to grow, bu
 
 Then, there is my version of 'Space Invaders', with many features similiar to the original game, such as aliens speeding up as the game goes on, temporary defence walls to shield behind and ufo's with bonus points appearing at the bottom of the screen. Use left and right to move and space bar to fire. It is written using object orientated programming.
 
-Finally, there is my version of "Phoenix", with many similar features to the original game, such as three different screen type plays, and difficulty increasing as you move onto new rounds. Use left and right to move and space bar to fire. It is also written using object orientated programming.
+Finally, there is my version of "Phoenix", with many similar features to the original game, such as three different screen type plays, and difficulty increasing as you move onto new rounds. Use left and right to move and space bar to fire. Object is to avoid being hit and to kill all objects. In the final screen type it is to kill the queen alien which is protected by a wall and defenders, which you can also destroy. It is also written using object orientated programming.
 
 All games are provided for non commercial use only
 
