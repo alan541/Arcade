@@ -10,3 +10,5 @@ Then, there is my version of 'Space Invaders', with many features similiar to th
 
 Finally, there is my version of "Phoenix", with many similar features to the original game, such as three different screen type plays, and difficulty increasing as you move onto new rounds. Use left and right to move and space bar to fire. It is also written using object orientated programming.
 
+All games are provided for non commercial use only
+
