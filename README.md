@@ -12,5 +12,7 @@ Next, there is my version of "Phoenix", with many similar features to the origin
 
 Finally, there is my version of 'Scramble', using rolling screens from right to left and three distinct phases.  This game has an end point, but extra points are given for any lives in hand. The object of this game is mainly manoeuvering around objects and avoiding collisions, and also shooting in phase one. 
 
+All games are written in python through pygame.
+
 All games are provided for non commercial use only
 
