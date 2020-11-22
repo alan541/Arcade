@@ -10,7 +10,7 @@ Then, there is my version of 'Space Invaders', with many features similiar to th
 
 Next, there is my version of "Phoenix", with many similar features to the original game, such as three different screen type plays, and difficulty increasing as you move onto new rounds. Use left and right to move and space bar to fire. Object is to avoid being hit and to kill all objects. In the final screen type it is to kill the queen alien which is protected by a wall and defenders, which you can also destroy. It is also written using object orientated programming.
 
-Finally, there is my version of 'Scramble', using rolling screens from right to left and three distinct phases.  This game has an end point, but extra points are given for any lives in hand. The object of this game is mainly manoeuvering around objects and avoiding collisions, and also shooting in phase one. 
+Finally, there is my version of 'Scramble', using rolling screens from right to left and three distinct phases.  This game has an end point, but extra points are given for any lives in hand. The object of this game is mainly manoeuvering around objects and avoiding collisions, and also shooting in phase one. Use up, dowm, right and left to move and space bar to shoot in phase one. In phase three, the space bar instead gives you extra 'booster' velocity when required.
 
 All games are written in python through pygame.
 
